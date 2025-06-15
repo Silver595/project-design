@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-// --- SVG Icons ---
+
 const CodeIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -27,9 +27,6 @@ const PlusIcon = () => (
     </svg>
 );
 
-/**
- * PlayerRow Component: Renders a single player's information.
- */
 const PlayerRow = ({ player }) => (
     <div className="player-row">
         <div className="player-rank">#{player.rank}</div>
@@ -63,9 +60,7 @@ const PlayerRow = ({ player }) => (
     </div>
 );
 
-/**
- * LeaderboardSection Component: Renders a full leaderboard section.
- */
+
 const LeaderboardSection = ({ title, icon, players }) => (
     <div className="leaderboard-section">
         <div className="leaderboard-header">
@@ -84,9 +79,7 @@ const LeaderboardSection = ({ title, icon, players }) => (
 );
 
 
-/**
- * LeaderboardPage Component: The main view showing leaderboards.
- */
+
 export const LeaderboardPage = ({ codingChampions, mcqMasters, onNavigateToAddPlayer }) => (
     <div className="page-container">
         <header className="page-header">

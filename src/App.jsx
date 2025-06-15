@@ -2,7 +2,6 @@ import React, { useState, useMemo } from 'react';
 import { LeaderboardPage, AddPlayerForm } from './Leaderboard';
 import './App.css';
 
-// --- Default Data for the Leaderboards ---
 const initialCodingChampions = [
   { id: 1, rank: 1, initial: 'CM', name: 'CodeMaster', winRate: 79, played: 156, wins: 124, losses: 32, coins: 3420, colorClass: 'color-blue' },
   { id: 2, rank: 2, initial: 'AE', name: 'AlgoExpert', winRate: 76, played: 142, wins: 108, losses: 34, coins: 2980, colorClass: 'color-green' },
@@ -14,16 +13,12 @@ const initialMcqMasters = [
   { id: 2, rank: 2, initial: 'BB', name: 'BrainBox', winRate: 83, played: 210, wins: 175, losses: 35, coins: 3850, colorClass: 'color-pink' },
 ];
 
-
-/**
- * App Component: The main component that manages state and views.
- */
 export default function App() {
     const [view, setView] = useState('leaderboard'); // 'leaderboard' or 'form'
     const [codingChampions, setCodingChampions] = useState(initialCodingChampions);
     const [mcqMasters, setMcqMasters] = useState(initialMcqMasters);
     
-    // Helper function to process and sort player lists
+  
     const processPlayerList = (list) => {
         return list
             .sort((a, b) => b.coins - a.coins) // Sort by coins descending
@@ -37,14 +32,14 @@ export default function App() {
         const { name, played, wins } = newPlayerData;
         const losses = played - wins;
         const winRate = played > 0 ? Math.round((wins / played) * 100) : 0;
-        // Simple coin calculation for example purposes
+       
         const coins = wins * 20 + losses * 5; 
         const initial = name.split(' ').map(n => n[0]).join('').toUpperCase().substring(0,2);
         const colors = ['color-red', 'color-yellow', 'color-cyan', 'color-lime', 'color-fuchsia'];
         const colorClass = colors[Math.floor(Math.random() * colors.length)];
 
         const player = {
-            id: Date.now(), // Use timestamp for unique ID
+            id: Date.now(), 
             name,
             played,
             wins,
