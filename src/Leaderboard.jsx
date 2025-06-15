@@ -106,9 +106,7 @@ export const LeaderboardPage = ({ codingChampions, mcqMasters, onNavigateToAddPl
     </div>
 );
 
-/**
- * AddPlayerForm Component: The view for adding a new player.
- */
+
 export const AddPlayerForm = ({ onAddPlayer, onNavigateBack }) => {
     const [name, setName] = useState('');
     const [leaderboard, setLeaderboard] = useState('coding');
