@@ -205,7 +205,7 @@ body {
 }
 
 
-/* --- Icons --- */
+
 .icon {
     height: 1.5rem;
     width: 1.5rem;
@@ -226,7 +226,7 @@ body {
     margin-right: 0.5rem;
 }
 
-/* --- Buttons --- */
+
 .button {
     font-weight: 700;
     padding: 0.5rem 1rem;
@@ -239,23 +239,22 @@ body {
 }
 
 .primary-button {
-    background-color: #2563eb; /* blue-600 */
+    background-color: #2563eb; 
     color: white;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 .primary-button:hover {
-    background-color: #1d4ed8; /* blue-700 */
+    background-color: #1d4ed8; 
 }
 
 .secondary-button {
-    background-color: #e5e7eb; /* gray-200 */
+    background-color: #e5e7eb; 
     color: #1f2937; /* gray-800 */
 }
 .secondary-button:hover {
-    background-color: #d1d5db; /* gray-300 */
+    background-color: #d1d5db; 
 }
 
-/* --- Form Styling --- */
 .form-container {
     background-color: #ffffff;
     padding: 2rem;
@@ -272,7 +271,7 @@ body {
     display: block;
     font-size: 0.875rem;
     font-weight: 500;
-    color: #374151; /* gray-700 */
+    color: #374151; 
 }
 
 .form-input {
@@ -281,14 +280,14 @@ body {
     width: 100%;
     padding: 0.5rem 0.75rem;
     background-color: white;
-    border: 1px solid #d1d5db; /* gray-300 */
+    border: 1px solid #d1d5db; 
     border-radius: 0.375rem;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 .form-input:focus {
     outline: none;
-    border-color: #2563eb; /* focus:border-blue-500 */
-    box-shadow: 0 0 0 3px rgb(59 130 246 / 0.5); /* focus:ring-blue-500 */
+    border-color: #2563eb; 
+    box-shadow: 0 0 0 3px rgb(59 130 246 / 0.5);
 }
 
 .form-grid {
