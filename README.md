@@ -1,3 +1,2 @@
-![demo view](../project-design/public/Demo_view.png)
-
+![demo view](public/Demo_view.png)
 
