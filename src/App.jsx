@@ -3,13 +3,13 @@ import { LeaderboardPage, AddPlayerForm } from './Leaderboard';
 import './App.css';
 
 const initialCodingChampions = [
-  { id: 1, rank: 1, initial: 'CM', name: 'CodeMaster', winRate: 79, played: 156, wins: 124, losses: 32, coins: 3420, colorClass: 'color-blue' },
-  { id: 2, rank: 2, initial: 'AE', name: 'AlgoExpert', winRate: 76, played: 142, wins: 108, losses: 34, coins: 2980, colorClass: 'color-green' },
-  { id: 3, rank: 3, initial: 'DN', name: 'DevNinja', winRate: 74, played: 128, wins: 95, losses: 33, coins: 2650, colorClass: 'color-purple' },
+  { id: 1, rank: 1, initial: 'CS', name: 'CaptainSilver', winRate: 79, played: 156, wins: 124, losses: 32, coins: 3420, colorClass: 'color-blue' },
+  { id: 2, rank: 2, initial: 'IS', name: 'IshowSpeed', winRate: 76, played: 142, wins: 108, losses: 34, coins: 2980, colorClass: 'color-green' },
+  { id: 3, rank: 3, initial: 'KC', name: 'KaiCenat', winRate: 74, played: 128, wins: 95, losses: 33, coins: 2650, colorClass: 'color-purple' },
 ];
 
 const initialMcqMasters = [
-  { id: 1, rank: 1, initial: 'QM', name: 'QuizMaster', winRate: 85, played: 234, wins: 198, losses: 36, coins: 4200, colorClass: 'color-indigo' },
+  { id: 1, rank: 1, initial: 'BT', name: 'BenTen', winRate: 85, played: 234, wins: 198, losses: 36, coins: 4200, colorClass: 'color-indigo' },
   { id: 2, rank: 2, initial: 'BB', name: 'BrainBox', winRate: 83, played: 210, wins: 175, losses: 35, coins: 3850, colorClass: 'color-pink' },
 ];
 
